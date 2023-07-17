@@ -1,0 +1,180 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Каталог
+{% endblock %}    
+
+{% block body %}
+    <main>
+        <div class="container">
+            <h2 class="catalog_title">Катогорія №Х</h2>
+            <div class="func_catalog_block">
+                <div class="filter_aside_block">
+                    <img class="filter_aside_X" src="https://placehold.co/15" alt="X">
+                    <div class="toggle_price_row">
+                        <p class="toggle_price_row_title">Ціна</p>
+                        <div class="price_input">
+                            <input class="toggle_price_input" placeholder="100₴" type="text">
+                            <input class="toggle_price_input" placeholder="1000₴" type="text">
+                            <button class="toggle_price_btn">OK</button>
+                        </div>
+                        <hr class="filter_block_hr">
+                    </div>
+                    <div class="filter_row">
+                        <p class="filter_title">Зріст</p>
+                        <form class="filter_radio_form" action="radio">
+                            <div class="filter_radio_row">
+                                <input type="radio" name="height" id="1">
+                                <span class="filter_radio_disc">10cm</span>
+                            </div>
+                            <div class="filter_radio_row">
+                                <input type="radio" name="height" id="2">
+                                <span class="filter_radio_disc">20cm</span>
+                            </div>
+                            <div class="filter_radio_row">
+                                <input type="radio" name="height" id="3">
+                                <span class="filter_radio_disc">30cm</span>
+                            </div>
+                            <div class="filter_radio_row">
+                                <input type="radio" name="height" id="4">
+                                <span class="filter_radio_disc">40cm</span>
+                            </div>
+                        </form>
+                        <hr>
+                    </div>
+                    <div class="filter_row">
+                        <p class="filter_title">Вага</p>
+                        <form class="filter_radio_form" action="radio">
+                            <div class="filter_radio_row">
+                                <input type="radio" name="height" id="1">
+                                <span class="filter_radio_disc">0.5кг-1кг</span>
+                            </div>
+                            <div class="filter_radio_row">
+                                <input type="radio" name="height" id="2">
+                                <span class="filter_radio_disc">1кг-5кг</span>
+                            </div>
+                            <div class="filter_radio_row">
+                                <input type="radio" name="height" id="3">
+                                <span class="filter_radio_disc">5кг-10кг</span>
+                            </div>
+                            <div class="filter_radio_row">
+                                <input type="radio" name="height" id="4">
+                                <span class="filter_radio_disc">10кг-30кг</span>
+                            </div>
+                        </form>
+                        <hr>
+                    </div>
+                    <div class="filter_row">
+                        <p class="filter_title">Колір</p>
+                        <form class="filter_radio_form" action="radio">
+                            <div class="filter_radio_row">
+                                <input type="radio" name="height" id="1">
+                                <span class="filter_radio_disc">Жовтий</span>
+                            </div>
+                            <div class="filter_radio_row">
+                                <input type="radio" name="height" id="2">
+                                <span class="filter_radio_disc">Блакитний</span>
+                            </div>
+                            <div class="filter_radio_row">
+                                <input type="radio" name="height" id="3">
+                                <span class="filter_radio_disc">Чорний</span>
+                            </div>
+                        </form>
+                        <hr>
+                    </div>
+                </div>
+                <div class="sort_and_list_block">
+                    <div class="func_sort_block">
+                        <a class="func_sort_href active_sort_href" href="#">Популярні</a>
+                        <a class="func_sort_href" href="#">Нові</a>
+                        <a class="func_sort_href" href="#">Дешеві</a>
+                        <a class="func_sort_href" href="#">Дорогі</a>
+                        <a class="func_sort_href" href="#">За назвою</a>
+                        <img class="filter_slide_btn" src="https://placehold.co/35" alt="filter_btn">
+
+                    </div> 
+                    <div class="catalog_block">
+                        <div class="catalog_item_row">
+                            <div class="catalog_item_card">
+                                <a href="itempage"><img src="https://placehold.co/210" alt="product_img"></a>
+                                <p class="catalog_item_title">Lorem, ipsum dolor.</p>
+                                <p class="catalog_item_price">XXXX₴</p>
+                                <a class="catalog_buy_btn" href="itempage"><span class="catalog_buy_text">Придбати</span></a>
+                            </div>
+                            <div class="catalog_item_card">
+                                <a href="itempage"><img src="https://placehold.co/210" alt="product_img"></a>
+                                <p class="catalog_item_title">Lorem, ipsum dolor.</p>
+                                <p class="catalog_item_price">XXXX₴</p>
+                                <a class="catalog_buy_btn" href="itempage"><span class="catalog_buy_text">Придбати</span></a>
+                            </div>
+                            <div class="catalog_item_card">
+                                <a href="itempage"><img src="https://placehold.co/210" alt="product_img"></a>
+                                <p class="catalog_item_title">Lorem, ipsum dolor.</p>
+                                <p class="catalog_item_price">XXXX₴</p>
+                                <a class="catalog_buy_btn" href="itempage"><span class="catalog_buy_text">Придбати</span></a>
+                            </div>
+                            <div class="catalog_item_card">
+                                <a href="itempage"><img src="https://placehold.co/210" alt="product_img"></a>
+                                <p class="catalog_item_title">Lorem, ipsum dolor.</p>
+                                <p class="catalog_item_price">XXXX₴</p>
+                                <a class="catalog_buy_btn" href="itempage"><span class="catalog_buy_text">Придбати</span></a>
+                            </div>
+                        </div>
+                        <div class="catalog_item_row">
+                            <div class="catalog_item_card">
+                                <a href="itempage"><img src="https://placehold.co/210" alt="product_img"></a>
+                                <p class="catalog_item_title">Lorem, ipsum dolor.</p>
+                                <p class="catalog_item_price">XXXX₴</p>
+                                <a class="catalog_buy_btn" href="itempage"><span class="catalog_buy_text">Придбати</span></a>
+                            </div>
+                            <div class="catalog_item_card">
+                                <a href="itempage"><img src="https://placehold.co/210" alt="product_img"></a>
+                                <p class="catalog_item_title">Lorem, ipsum dolor.</p>
+                                <p class="catalog_item_price">XXXX₴</p>
+                                <a class="catalog_buy_btn" href="itempage"><span class="catalog_buy_text">Придбати</span></a>
+                            </div>
+                            <div class="catalog_item_card">
+                                <a href="itempage"><img src="https://placehold.co/210" alt="product_img"></a>
+                                <p class="catalog_item_title">Lorem, ipsum dolor.</p>
+                                <p class="catalog_item_price">XXXX₴</p>
+                                <a class="catalog_buy_btn" href="itempage"><span class="catalog_buy_text">Придбати</span></a>
+                            </div>
+                            <div class="catalog_item_card">
+                                <a href="itempage"><img src="https://placehold.co/210" alt="product_img"></a>
+                                <p class="catalog_item_title">Lorem, ipsum dolor.</p>
+                                <p class="catalog_item_price">XXXX₴</p>
+                                <a class="catalog_buy_btn" href="itempage"><span class="catalog_buy_text">Придбати</span></a>
+                            </div>
+                        </div>
+                        <div class="catalog_item_row">
+                            <div class="catalog_item_card">
+                                <a href="itempage"><img src="https://placehold.co/210" alt="product_img"></a>
+                                <p class="catalog_item_title">Lorem, ipsum dolor.</p>
+                                <p class="catalog_item_price">XXXX₴</p>
+                                <a class="catalog_buy_btn" href="itempage"><span class="catalog_buy_text">Придбати</span></a>
+                            </div>
+                            <div class="catalog_item_card">
+                                <a href="itempage"><img src="https://placehold.co/210" alt="product_img"></a>
+                                <p class="catalog_item_title">Lorem, ipsum dolor.</p>
+                                <p class="catalog_item_price">XXXX₴</p>
+                                <a class="catalog_buy_btn" href="itempage"><span class="catalog_buy_text">Придбати</span></a>
+                            </div>
+                            <div class="catalog_item_card">
+                                <a href="itempage"><img src="https://placehold.co/210" alt="product_img"></a>
+                                <p class="catalog_item_title">Lorem, ipsum dolor.</p>
+                                <p class="catalog_item_price">XXXX₴</p>
+                                <a class="catalog_buy_btn" href="itempage"><span class="catalog_buy_text">Придбати</span></a>
+                            </div>
+                            <div class="catalog_item_card">
+                                <a href="itempage"><img src="https://placehold.co/210" alt="product_img"></a>
+                                <p class="catalog_item_title">Lorem, ipsum dolor.</p>
+                                <p class="catalog_item_price">XXXX₴</p>
+                                <a class="catalog_buy_btn" href="itempage"><span class="catalog_buy_text">Придбати</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    {% endblock %}
